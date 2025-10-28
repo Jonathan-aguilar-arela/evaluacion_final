@@ -583,7 +583,7 @@ margin-top: 1px;
 
 .texto-producto{
   
-  background:var(--azul);
+  background:#037bc0;
   color:var(--blanco);
   padding:18px 16px 20px;
   display:flex;
@@ -613,7 +613,7 @@ margin-top: 1px;
 }
 
 .texto-producto .btn{
-  background: greenyellow;
+  background: #8cbc00;
   color: white;
   text-decoration: none;
   display: block;
