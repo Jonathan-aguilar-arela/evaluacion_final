@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contacto</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.svg" />
+</head>
+<body>
+<header>
+    <div>
+    <h1 class="titulo1">Tienda  <span style="color: #037bc0;"> Muebles </span></h1>
+    </div>
+    <div class="container">
+    <ul class="nav__list">
+        <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    </div>
+</header>
+<main class="container">
+<div class="contenedor">
+    <h2 class="text-center" style="font-size: 40px;">Contacto</h2>
+    <BR>
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <br>
+                <br>
+                <div class="campo">
+                <label for="nombre">Nombre: </label>
+                <input  id="nombre" type="text" placeholder="Tu Nombre" required>
+                </div>
+                <div class="campo">
+                <label for="asunto">Asunto:</label>
+                <input id="asunto" type="text" placeholder="Tu Asunto"  required>
+                </div>
+                <div class="campo">
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" placeholder="Tu Email" >
+                </div>
+                <div class="campo">
+                <label for="tel">Teléfono:</label>
+                <input id="tel" type="tel" placeholder="Tu Teléfono" >
+                </div>
+                <div class="campo">
+                <label for="tel">Mensaje:</label>
+                <textarea rows="10" cols="20"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select id="pais">
+                        <option value="">-- Seleccione -- </option>
+                        <option value="MX">México</option>
+                        <option value="PR">Perú</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="ES">España</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Información Extra</legend>
+                
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría de Interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Exterior">
+                        <option value="Recamaras">
+                        <option value="Oficina">
+                        <option value="Televisión">
+                    </datalist>
+                </div>
+
+            </fieldset>
+
+            <input class="btn" type="submit" value="Enviar Formulario" >
+        </form>
+</div>    
+</main>
+<div>
+    <footer>
+        <div class="footer2">
+            <div class="columna">
+                <h3>Categorías</h3>
+                <nav class="columna">
+                    <a href="#">Cocina</a> <br>
+                    <a href="#">Oficina</a> <br>
+                    <a href="#">Jardín</a>  <br>
+                    <a href="#">Cochera</a>  <br>
+                    <a href="#">Dormitorios</a>  <br>
+                </nav>
+            </div>
+            <div class="columna">
+                <h3>Sobre Nosotros</h3>
+                <nav class="columna">
+                    <a href="#">Nuestra Historia</a>   <br>
+                    <a href="#">Misión, Visión y Valores</a> <br>
+                    <a href="#">Carreras</a>  <br>
+                    <a href="#">Política de Privacidad</a>  <br>
+                    <a href="#">Términos del Servicio</a>   <br>
+                </nav>
+            </div>
+            <div class="columna">
+                <h3>Soporte</h3>
+                <nav class="columna">
+                    <a href="#">Preguntas Frecuentes</a> <br>
+                    <a href="#">Ayuda en línea</a>  <br>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+            <div class="derecho">
+        <p>Todos los derechos Reservados, TiendaMuebles</p>
+    </div>
+    </footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
